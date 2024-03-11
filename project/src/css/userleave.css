@@ -1,0 +1,24 @@
+.userleave {
+  min-height: calc(100vh - 130px);
+}
+.userleavebox {
+  width: 768px;
+  height: 635px;
+  background-color: white;
+  border: 1px solid #f5f5fa;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.userleavebox > div:first-of-type {
+  font-family: "crimson-text";
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #7878ab;
+  margin-bottom: 40px;
+}

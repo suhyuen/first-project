@@ -1,0 +1,82 @@
+.notification {
+  min-height: calc(100vh - 130px);
+}
+.notification > div:first-of-type {
+  font-family: "crimson-text";
+  font-size: 30px;
+  font-weight: bold;
+  color: #7878ab;
+  margin: 40px 0px;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+.notification_box {
+  width: 1160px;
+  margin: 0 auto;
+  border: 1px solid #bababa;
+}
+.notification_nav > div:first-of-type {
+  width: 1160px;
+  height: 35px;
+  background-color: rgba(127, 199, 217, 0.5);
+  padding: 0px 16px;
+  box-sizing: border-box;
+}
+.notification_nav > div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notification_inf {
+  display: flex;
+  gap: 16px;
+}
+.notification_inf > p:first-of-type {
+  margin-right: 70px;
+}
+.notification_inf > p:nth-child(2) {
+  margin-right: 60px;
+}
+.notification_nav > div:first-of-type > div:first-of-type {
+  display: flex;
+  gap: 24px;
+}
+.notification_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 1160px;
+  height: 40px;
+  border-bottom: 1px solid #bababa;
+  margin: 0 auto;
+  padding: 0px 35px;
+  box-sizing: border-box;
+  background-color: white;
+}
+.notification_list > div {
+  display: flex;
+  gap: 45px;
+}
+.notification_button {
+  width: 1160px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 100px auto;
+}
+.notification_button > button {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #bebebe;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+.notification_button > button:hover {
+  background-color: #6c6c6c;
+  color: white;
+}

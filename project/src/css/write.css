@@ -1,0 +1,61 @@
+.writepage {
+  min-height: calc(100vh - 130px);
+  width: 1200px;
+  margin: 0 auto;
+}
+.writebox {
+  width: 768px;
+  background-color: white;
+  border: 1px solid #f5f5fa;
+  width: 768px;
+  height: 680px;
+  border-radius: 8px;
+  margin: 80px auto;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.writebox > div:first-of-type {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.App > input {
+  font-size: 14px;
+  font-weight: bold;
+  width: 736px;
+  height: 49px;
+  border: 1px solid #d2d2d2;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  box-sizing: border-box;
+  margin: 16px 0px;
+  border-radius: 8px;
+}
+.write_button {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  margin-bottom: 100px;
+}
+.write_button > button {
+  width: 112px;
+  height: 37px;
+  border-radius: 32px;
+  background-color: #f5f5fa;
+  color: #7878ab;
+  border: 0px;
+  box-shadow: 5px 5px 10px rgba(170, 170, 204, 0.25);
+  box-shadow: 10px 10px 20px rgba(170, 170, 204, 0.5);
+  font-weight: bold;
+}
+.writebox_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.writebox_title > p:nth-child(2) {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(165, 73, 73);
+}

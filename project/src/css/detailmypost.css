@@ -1,0 +1,78 @@
+.detailmypost {
+  min-height: calc(150vh - 130px);
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.mypost_title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.mypost_title > p:first-of-type {
+  font-size: 30px;
+  font-weight: bold;
+}
+.mypost_title > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 18px;
+}
+.mypost_title > div > p > span {
+  color: #ff8484;
+}
+.mypost_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1160px;
+  height: 50px;
+  background-color: rgba(120, 120, 171, 0.5);
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0px 16px;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+.mypost_nav > div {
+  display: flex;
+  gap: 16px;
+}
+.mypost_main {
+  width: 1160px;
+  height: 762px;
+  background-color: white;
+  margin-top: 24px;
+  border: 1px solid #bababa;
+}
+
+.mypost_endbutton {
+  width: 1160px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 40px;
+}
+.mypost_endbutton > button {
+  width: 112px;
+  height: 37px;
+  border-radius: 32px;
+  background-color: #f5f5fa;
+  color: #7878ab;
+  border: 0px;
+  box-shadow: 5px 5px 10px rgba(170, 170, 204, 0.25);
+  box-shadow: 10px 10px 20px rgba(170, 170, 204, 0.5);
+  font-weight: bold;
+}
+.mypost_endbutton > a > button {
+  width: 112px;
+  height: 37px;
+  border-radius: 32px;
+  background-color: #f5f5fa;
+  color: #7878ab;
+  border: 0px;
+  box-shadow: 5px 5px 10px rgba(170, 170, 204, 0.25);
+  box-shadow: 10px 10px 20px rgba(170, 170, 204, 0.5);
+  font-weight: bold;
+}

@@ -1,0 +1,71 @@
+.loginpage {
+  min-height: calc(100vh - 130px);
+}
+.loginbox {
+  width: 768px;
+  height: 635px;
+  background-color: white;
+  border: 1px solid #f5f5fa;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loginbox > div:first-of-type {
+  font-family: "crimson-text";
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #7878ab;
+  margin-bottom: 16px;
+}
+.loginbox > div > p {
+  color: #7878ab;
+  font-family: "Pacifico";
+  margin-top: 24px;
+}
+.loginbox > div > input {
+  width: 376px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #f5f5fa;
+  border: 0px solid;
+  box-shadow: inset 2px 2px 4px rgba(170, 170, 204, 0.25);
+  box-shadow: inset 5px 5px 10px rgba(170, 170, 204, 0.5);
+  margin-top: 8px;
+}
+.loginnav {
+  width: 376px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  font-family: "pacifico";
+  font-size: 14px;
+  color: #7878ab;
+}
+.loginnav > div > a {
+  color: #7878ab;
+}
+.loginbox > div > button {
+  width: 346px;
+  height: 65px;
+  margin-top: 40px;
+  border-radius: 32px;
+  background-color: #f5f5fa;
+  color: #7878ab;
+  border: 0px;
+  box-shadow: 5px 5px 10px rgba(170, 170, 204, 0.25);
+  box-shadow: 10px 10px 20px rgba(170, 170, 204, 0.5);
+  font-weight: bold;
+  font-size: 24px;
+}
+.loginbox > div:last-child {
+  margin-top: 40px;
+}
+.loginbox > div:last-child > a {
+  color: #7878ab;
+  font-weight: bold;
+  font-size: 20px;
+}

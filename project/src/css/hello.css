@@ -1,0 +1,21 @@
+.hello_button {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.hello_button > a > button {
+  width: 112px;
+  height: 37px;
+  border-radius: 32px;
+  background-color: #f5f5fa;
+  color: #7878ab;
+  border: 0px;
+  box-shadow: 5px 5px 10px rgba(170, 170, 204, 0.25);
+  box-shadow: 10px 10px 20px rgba(170, 170, 204, 0.5);
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+a > .notification_list {
+  color: black;
+}

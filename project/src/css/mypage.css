@@ -1,0 +1,99 @@
+.information {
+  min-height: calc(100vh - 130px);
+}
+.informationbox {
+  width: 768px;
+  height: 680px;
+  background-color: white;
+  border: 1px solid #f5f5fa;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.informationbox > div:first-of-type {
+  font-family: "crimson-text";
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #7878ab;
+  margin-bottom: 16px;
+}
+.information_lists {
+  width: 100%;
+  display: flex;
+  gap: 37px;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+.information_lists > div:first-child > p {
+  color: #7878ab;
+  font-family: "Pacifico";
+  margin-bottom: 16px;
+}
+.information_lists > div:nth-child(2) > p {
+  margin-bottom: 16px;
+}
+.myposts {
+  width: 100%;
+  margin-left: 100px;
+  display: flex;
+  gap: 8px;
+  margin-top: 24px;
+}
+.myposts > p:first-child {
+  color: #7878ab;
+  font-family: "Pacifico";
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.myposts > p:nth-child(2) > a {
+  font-size: 14px;
+  color: #bababa;
+}
+.myposts_lists {
+  border: 1px solid #bababa;
+  margin-right: 90px;
+}
+.myposts_lists > div {
+  width: 572px;
+  height: 30px;
+}
+.myposts_lists > div:not(:last-child) {
+  border-bottom: 1px solid #bababa;
+}
+.myposts_lists0 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  height: 37px;
+  border-bottom: 1px solid #bababa;
+  box-sizing: border-box;
+}
+.myposts_lists0 > div {
+  display: flex;
+  gap: 52px;
+  font-size: 14px;
+  padding-right: 16px;
+}
+.mypost_button {
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+}
+.mypost_button > a > button {
+  width: 112px;
+  height: 37px;
+  border-radius: 32px;
+  background-color: #f5f5fa;
+  color: #7878ab;
+  border: 0px;
+  box-shadow: 5px 5px 10px rgba(170, 170, 204, 0.25);
+  box-shadow: 10px 10px 20px rgba(170, 170, 204, 0.5);
+}
