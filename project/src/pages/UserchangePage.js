@@ -12,7 +12,7 @@ export default function UserchangePage() {
     userId: "",
     nickname: "",
     email: "",
-    phoneNumber: "",
+    phonenumber: "",
   });
 
   const handlerInputChange = (e) => {
@@ -74,8 +74,8 @@ export default function UserchangePage() {
             <div className="signup_list">
               <p>phone number</p>
               <input
-                name="phoneNumber"
-                value={userData.phoneNumber}
+                name="phonenumber"
+                value={userData.phonenumber}
                 onChange={handlerInputChange}
               ></input>
             </div>
