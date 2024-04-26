@@ -1,11 +1,17 @@
 import Header from "../component/Header";
 import Footer from "../component/Footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../css/mypage.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import UserchangePage from "./UserchangePage";
+import { useDispatch } from "react-redux";
+import { logout } from "../features/counter/userSlice";
 
 export default function MyPage() {
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [userData, setUserData] = useState({
     userName: "",
     userId: "",
@@ -31,11 +37,32 @@ export default function MyPage() {
           headers: { Authorization: localStorage.getItem("accessToken") },
         }
       )
-      .then((response) => {
-        setUserData(response.data);
-        setPostData(response.data.posts || []);
+      .then((resp) => {
+        setUserData(resp.data);
+        setPostData(resp.data.posts || []);
       });
   }, []);
+
+  const handleDeleteUser = (uid) => {
+    axios.post(
+      `http://localhost:8080/deleteuser`,
+      {
+        uid:uid,
+      },
+      {
+        headers: { Authorization: localStorage.getItem("accessToken") },
+      }
+    )
+    .then((resp)=> {
+      alert("회원 탈퇴가 완료되었습니다");
+      dispatch(logout());
+      navigate("/")
+    })
+    .catch((error) => {
+      // 오류 처리 코드 추가
+      console.error("오류 발생:", error);
+    })
+  }
 
   const boardList = postData.map((data) => {
     return (
@@ -81,9 +108,11 @@ export default function MyPage() {
             <Link to="/change">
               <button>수정</button>
             </Link>
-            <Link to="/leave">
-              <button>탈퇴</button>
-            </Link>
+            
+              <button onClick={() => {
+                handleDeleteUser(userData.uid)
+              }}>탈퇴</button>
+            
           </div>
         </div>
       </div>

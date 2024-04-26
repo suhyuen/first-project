@@ -39,9 +39,7 @@ export default function Header() {
                   onMouseOver={handlerMenuopen}
                   onMouseLeave={handlerMenuClose}
                 >
-                  <Link to="/notification">
-                    <li>공지사항</li>
-                  </Link>
+                  
                   <Link to="/hello">
                     <li>가입 인사</li>
                   </Link>

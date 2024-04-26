@@ -11,7 +11,7 @@ export default function UsedpurchasePage() {
     {
       uid: "",
       title: "",
-      nickname: "",
+      user:{nickname: ""},
       likes: "",
       viewer: "",
       createdAt: "",
@@ -28,20 +28,18 @@ export default function UsedpurchasePage() {
 
   const boardList = postData.map((data) => {
     return (
-      <Link to={"/detailmypost?uid=" + data.uid}>
+      <Link to={"/detailpost?uid=" + data.uid}>
         <div className="mypost_content">
           <div>
             <p>{data.uid}</p>
-            <div>
-              <img src="images" width="82px" height="99px"></img>
-            </div>
             <p>{data.title}</p>
           </div>
+
           <div>
-            <p>{data.nickname}</p>
-            <p>{data.createdAt}</p>
-            <p>{data.likes}</p>
-            <p>{data.viewer}</p>
+            <p>닉네임 : {data.user.nickname}</p>
+            <p>날짜 : {data.createdAt}</p>
+            <p>좋아요 : {data.likes}</p>
+            <p>조회 수 : {data.viewer}</p>
           </div>
         </div>
       </Link>
@@ -57,15 +55,9 @@ export default function UsedpurchasePage() {
           <div>
             <div>
               <p>글번호</p>
-              <p>사진</p>
-              <p>제목</p>
+              
             </div>
-            <div className="post_information">
-              <p>닉네임</p>
-              <p>날짜</p>
-              <p>좋아요수</p>
-              <p>조회수</p>
-            </div>
+            
           </div>
           {boardList}
         </div>

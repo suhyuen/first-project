@@ -7,12 +7,9 @@ import LoginPage from "./pages/LoginPage";
 import FindpasswordPage from "./pages/FindpasswordPage";
 import MyPage from "./pages/MyPage";
 import UserchangePage from "./pages/UserchangePage";
-import UserleavePage from "./pages/UserleavePage";
 import MypostsPage from "./pages/MypostsPage";
-import DetailMypostPage from "./pages/DetailMypostPage";
 import WritePage from "./pages/WritePage";
 import EditpostPage from "./pages/EditpostPage";
-import Notification from "./pages/NotificationPage";
 import HelloPage from "./pages/HelloPage";
 import CommunityPage from "./pages/CommunityPage";
 import FuncommunityPage from "./pages/FuncommunityPage";
@@ -37,12 +34,9 @@ function App() {
         <Route path="/findpassword" element={<FindpasswordPage />}></Route>
         <Route path="/mypage" element={<MyPage />}></Route>
         <Route path="/change" element={<UserchangePage />}></Route>
-        <Route path="/leave" element={<UserleavePage />}></Route>
         <Route path="/myposts" element={<MypostsPage />}></Route>
-        <Route path="/detailmypost" element={<DetailMypostPage />}></Route>
         <Route path="/write" element={<WritePage />}></Route>
         <Route path="/editpost" element={<EditpostPage />}></Route>
-        <Route path="/notification" element={<Notification />}></Route>
         <Route path="/hello" element={<HelloPage />}></Route>
         <Route path="/community" element={<CommunityPage />}></Route>
         <Route path="/funcommunity" element={<FuncommunityPage />}></Route>

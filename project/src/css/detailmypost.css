@@ -45,6 +45,8 @@
   background-color: white;
   margin-top: 24px;
   border: 1px solid #bababa;
+  padding : 16px;
+  box-sizing: border-box;
 }
 
 .mypost_endbutton {
